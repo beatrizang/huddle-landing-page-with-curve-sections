@@ -1,0 +1,70 @@
+section {
+    @include section;
+}
+
+.grow-together {
+    background-color: $very-pale-blue;
+    .text {
+        margin-right: 5em;
+    }
+}
+
+.conversations {
+    .text {
+        margin-left: 5em;
+    }
+}
+
+.users {
+    background-color: $very-pale-blue;
+    .text {
+        margin-right: 5em;
+    }
+}
+
+.get-start {
+    @include display-column;
+    margin-bottom: 3em;
+
+    h2 {
+        margin-bottom: 1em;
+    }
+}
+
+.img-top {
+    margin-bottom: -1em;
+}
+.img-ft {
+    margin-bottom: -5px;
+}
+
+@media only screen and (max-width: 1260px){
+
+    .grow-together {
+        @include display-column-reverse;
+        @include section-mobile;
+        .text {
+            margin-right: 0;
+        }
+    }
+
+    .conversations {
+        @include display-column;
+        @include section-mobile;
+        .text {
+            margin-left: 0;
+        }
+    }
+
+    .users {
+        @include display-column-reverse;
+        @include section-mobile;
+        .text {
+            margin-right: 0;
+        }
+    }
+
+    .get-start {
+        text-align: center;
+    }
+}

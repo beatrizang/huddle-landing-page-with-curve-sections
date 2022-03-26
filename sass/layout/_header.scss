@@ -1,0 +1,9 @@
+header {
+    margin: 2em;
+
+    nav {
+        @include display-row;
+        justify-content: space-between;
+    }
+    
+}

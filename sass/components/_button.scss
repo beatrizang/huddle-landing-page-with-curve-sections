@@ -1,0 +1,36 @@
+.btn-try {
+    font-family: $font-body;
+    padding: 10px 20px;
+    border-radius: 80px 80px 80px 80px;
+    border: 1px solid $pink;
+    background-color: white;
+    color: $pink;
+}
+
+.btn-try:hover {
+    border: 1px solid $light-pink;
+    color: $light-pink;
+    cursor: pointer;
+}
+
+.btn-get {
+    @include button;
+    @include shadow-btn($pink);
+    border-radius: 80px 80px 80px 80px;
+
+}
+
+.btn-get:hover {
+    background-color: $light-pink;
+    cursor: pointer;
+}
+
+.btn-subscribe{
+    @include button;
+    border-radius: 5px;
+}
+
+.btn-subscribe:hover{
+    background-color: $light-pink;
+    cursor: pointer;
+}

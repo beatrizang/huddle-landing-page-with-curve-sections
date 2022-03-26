@@ -1,0 +1,60 @@
+.top-content {
+    @include display-column;
+    justify-content: center;
+    align-items: center;
+
+    .top-text {
+        text-align: center;
+        margin-bottom: 5em;
+       p {
+           width: 30em;
+           margin: 2em auto;
+       }   
+    }
+
+    .numbers {
+        @include display-row;
+        align-items: center;
+        margin-bottom: 2em;
+        
+        h2 {
+            font-family: $font-head;
+            font-size: 70px;
+        }
+        
+        
+        .number {
+            margin: 2em 12em;
+        }
+    }
+}
+
+@media only screen and (max-width: 1260px){
+
+    .top-content {
+        .top-text {
+            p {
+                width: 90%;
+            }   
+        }
+
+        .top-img {
+            margin: auto;
+            justify-content: center;
+            img {
+                margin-left: 2em;
+                width: 90%;
+            }
+        }
+
+        .numbers {
+            @include display-column;
+
+            .number {
+                margin: 2em 0;
+            }
+        }
+
+    }
+
+}
